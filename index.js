@@ -21,7 +21,7 @@ const server = express()
 server.use(express.json({limit: '50mb'}));
 server.use(cookieParser(process.env.JWT_SECRET))
 
-server.use(cors({ credentials: true, origin: true, optionsSuccessStatus: 200, }))
+server.use(cors({ credentials: true, origin: "https://gamerz-adobe.netlify.app/", optionsSuccessStatus: 200, }))
 server.use(morgan('tiny'))
 
 
